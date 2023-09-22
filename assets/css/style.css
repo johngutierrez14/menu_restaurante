@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@font-face {
+  font-family: "Amsterdam";
+  src: url("../fonts/AmsterdamFour_ttf_400.ttf") format("truetype");
+}
+
+:root {
+  --yellow: #f2cb05;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+.menu-title {
+  margin: 0;
+  background-color: #cb202d;
+  color: #fff;
+}
+.AmsterdamFour {
+  font-family: "Amsterdam", sans-serif;
+  color: #fff;
+}
+.catagories ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin-top: 2px;
+}
+.catagories ul li {
+  margin: 10px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: 2px solid var(--yellow);
+  border-radius: 5px;
+  color: var(--yellow);
+}
+.catagories ul li:hover {
+  background-color: var(--yellow);
+  color: white;
+  transition: 0.3s;
+}
+/* content */
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .c-image {
+  width: 1000px;
+  height: 160px;
+  border: 3px solid var(--yellow);
+  border-radius: 5px;
+}
+img {
+  width: 100%;
+  height: 230px;
+}
+.content .c-image img {
+  width: 100%;
+  height: 230px;
+}
+.content .t-n-p {
+  margin-left: 20px;
+  width: 1000px;
+}
+.content .t-n-p .header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted #182433;
+  padding: 0px 5px;
+}
+.content .t-n-p .title {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.content .t-n-p .price {
+  font-size: 0.8rem;
+  font-weight: 800;
+  color: var(--yellow);
+  word-spacing: 2px;
+}
+.content .t-n-p .des p {
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  .categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .categories li {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}
